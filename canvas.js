@@ -19,8 +19,8 @@ var colors = [
 ];
 
 if(canvas.width < 400){
-	var gravity = 0.3;
-	var friction = 0.85;
+	var gravity = 1;
+	var friction = 0.95;
 }
 else {
 	var gravity = 0.2;
@@ -98,13 +98,13 @@ function init() {
 	ballArray = [];
   let quantity;
   if(canvas.width < 400){
-    quantity = 130;
+    quantity = 180;
   }
   else {
     quantity = 500;
   }
 	for (let i = 0; i < quantity; i++) {
-		var radius = randomIntFromRange(8, 20);
+		var radius = randomIntFromRange(9, 20);
 		var x = randomIntFromRange(radius, canvas.width - radius);
 		var y = randomIntFromRange(0, canvas.height - radius);
 		if(canvas.width < 400){
