@@ -18,8 +18,14 @@ var colors = [
 	'#FF7F66'
 ];
 
-var gravity = 0.2;
-var friction = 0.98;
+if(canvas.width < 400){
+	var gravity = 0.2;
+	var friction = 0.9;
+}
+else {
+	var gravity = 0.2;
+	var friction = 0.98;
+}
 
 
 // Event Listeners
@@ -92,7 +98,7 @@ function init() {
 	ballArray = [];
   let quantity;
   if(canvas.width < 400){
-    quantity = 200;
+    quantity = 150;
   }
   else {
     quantity = 500;
