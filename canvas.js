@@ -101,8 +101,15 @@ function init() {
 		var radius = randomIntFromRange(8, 20);
 		var x = randomIntFromRange(radius, canvas.width - radius);
 		var y = randomIntFromRange(0, canvas.height - radius);
-		var dx = randomIntFromRange(-3, 3)
-		var dy = randomIntFromRange(-2, 2)
+		if(canvas.width < 400){
+			var dx = randomIntFromRange(-3, 3);
+			var dy = randomIntFromRange(-6, 6);
+		}
+		else {
+			var dx = randomIntFromRange(-3, 3);
+			var dy = randomIntFromRange(-2, 2);
+		}
+
 	    ballArray.push(new Ball(x, y, dx, dy, radius, randomColor(colors)));
 	}
 }
