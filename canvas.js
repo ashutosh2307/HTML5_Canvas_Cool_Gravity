@@ -20,7 +20,7 @@ var colors = [
 
 if(canvas.width < 400){
 	var gravity = 0.3;
-	var friction = 0.87;
+	var friction = 0.85;
 }
 else {
 	var gravity = 0.2;
@@ -98,7 +98,7 @@ function init() {
 	ballArray = [];
   let quantity;
   if(canvas.width < 400){
-    quantity = 150;
+    quantity = 130;
   }
   else {
     quantity = 500;
