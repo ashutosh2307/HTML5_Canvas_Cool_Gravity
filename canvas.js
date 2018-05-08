@@ -19,8 +19,8 @@ var colors = [
 ];
 
 if(canvas.width < 400){
-	var gravity = 0.2;
-	var friction = 0.9;
+	var gravity = 0.3;
+	var friction = 0.87;
 }
 else {
 	var gravity = 0.2;
